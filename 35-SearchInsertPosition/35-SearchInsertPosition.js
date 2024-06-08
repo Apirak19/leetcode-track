@@ -1,19 +1,19 @@
-    if (nums[i] === target) {
-      result = i;
+    let mid = Math.floor((left + right) / 2);
+    if (target === nums[mid]) {
+      return mid;
+    } else if (target > nums[mid]) {
+      left = mid + 1;
     } else {
-      if (
-        nums[i] === target - 1 ||
-        (nums[i] < target && target < nums[i + 1])
-      ) {
-        result = i + 1;
-      } else if (target > nums[i]) {
-        result = i + 1;
-const searchInsert = (nums, target) => {
-  let result = 0;
-  for (let i = 0; i < nums.length; i++) {
-      }
+      right = mid - 1;
     }
-  }
-  return result;
-};
+  while (left <= right) {
+const searchInsert = (nums, target) => {
+  let left = 0;
+  let right = nums.length - 1;
+ * @return {number}
+ */
+
+ * @param {number[]} nums
+ * @param {number} target
+/**
 [
